@@ -41,6 +41,13 @@
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "stopOnEntry": false,
             "preLaunchTask": "asm64+gcc"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "Tests",
+            "program": "${workspaceFolder}/${command:AskForProgramName}/tests",
+            "stopOnEntry": false,
         }
     ]
 }
